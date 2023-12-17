@@ -1,8 +1,16 @@
+using NineLivesCatRescueLibrary;
+using NineLivesCatRescueLibrary.ApiClients;
+using NineLivesCatRescueLibrary.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<RescueGroupsApiClient>();
+builder.Services.AddScoped<SubmitApplicationApiClient>();
+builder.Services.AddScoped<NineLivesStateManagementModel>();
+
 
 var app = builder.Build();
 
