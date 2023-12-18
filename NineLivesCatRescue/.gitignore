@@ -230,3 +230,9 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+.gitignore
+.DS_Store
+.idea/.idea.NineLivesCatRescue/.idea/vcs.xml
+NineLivesCatRescueLibrary/bin/
+NineLivesCatRescueLibrary/obj/

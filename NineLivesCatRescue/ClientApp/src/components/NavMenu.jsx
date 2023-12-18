@@ -6,7 +6,7 @@ export class NavMenu extends Component {
 
   render() {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-emerald-300 text-white">
             <div className="flex-1">
                 <a className="btn btn-ghost text-xl">9 Lives Cat Rescue</a>
             </div>
@@ -17,7 +17,7 @@ export class NavMenu extends Component {
                             <summary>
                                 Adopt/Foster
                             </summary>
-                            <ul className="p-2 bg-base-100 rounded-t-none">
+                            <ul className="p-2 bg-emerald-300 rounded-t-none">
                                 <li><a>Available Cats</a></li>
                                 <li><a>Adoption Application</a></li>
                                 <li><a>Foster Application</a></li>
