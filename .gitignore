@@ -230,3 +230,34 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+.gitignore
+.DS_Store
+.idea/.idea.NineLivesCatRescue/.idea/vcs.xml
+NineLivesCatRescueLibrary/bin/
+NineLivesCatRescueLibrary/obj/
+
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.AssemblyInfo.cs
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.AssemblyInfoInputs.cache
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.assets.cache
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.csproj.AssemblyReference.cache
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.csproj.CoreCompileInputs.cache
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.csproj.FileListAbsolute.txt
+/NineLivesCatRescueLibrary/obj/NineLivesCatRescueLibrary.csproj.nuget.dgspec.json
+/NineLivesCatRescueLibrary/obj/NineLivesCatRescueLibrary.csproj.nuget.g.props
+/NineLivesCatRescueLibrary/obj/NineLivesCatRescueLibrary.csproj.nuget.g.targets
+/NineLivesCatRescueLibrary/bin/Debug/net7.0/NineLivesCatRescueLibrary.deps.json
+/NineLivesCatRescueLibrary/bin/Debug/net7.0/NineLivesCatRescueLibrary.dll
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/ref/NineLivesCatRescueLibrary.dll
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/refint/NineLivesCatRescueLibrary.dll
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.dll
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.GlobalUsings.g.cs
+/NineLivesCatRescueLibrary/bin/Debug/net7.0/NineLivesCatRescueLibrary.pdb
+/NineLivesCatRescueLibrary/obj/Debug/net7.0/NineLivesCatRescueLibrary.pdb
+/NineLivesCatRescueLibrary/obj/project.assets.json
+/NineLivesCatRescueLibrary/obj/project.nuget.cache
+/NineLivesCatRescueLibrary/obj/project.packagespec.json
+/NineLivesCatRescueLibrary/obj/rider.project.restore.info
+/.idea/.idea.NineLivesCatRescue/.idea/vcs.xml
