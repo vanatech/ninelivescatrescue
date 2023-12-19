@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using NineLivesCatRescueLibrary;
-using NineLivesCatRescueLibrary.ApiClients;
+using NineLivesCatRescue.Managers;
 using NineLivesCatRescueLibrary.Models;
 
 namespace NineLivesCatRescue.Controllers
@@ -9,24 +8,22 @@ namespace NineLivesCatRescue.Controllers
     [ApiController]
     public class RescueGroupsController : ControllerBase
     {
-        private RescueGroupsApiClient _rescueGroupsApiClient;
-        private SubmitApplicationApiClient _submitApplicationApiClient;
+        private RescueGroupsManager _rescueGroupsManager;
         
-        public RescueGroupsController(RescueGroupsApiClient rescueGroupsApiClient, SubmitApplicationApiClient submitApplicationApiClient)
+        public RescueGroupsController(RescueGroupsManager rescueGroupsManager)
         {
-            _rescueGroupsApiClient = rescueGroupsApiClient;
-            _submitApplicationApiClient = submitApplicationApiClient;
+            _rescueGroupsManager = rescueGroupsManager;
         }
 
         [Route("available")]
         [HttpGet]
-        public async Task<RootModel> GetAvailableCatsByParameter()
+        public async Task<string> GetAvailableCatsByFilter()
         {
-            var availableCats = await _rescueGroupsApiClient.GetAvailableAnimalsAsync().ConfigureAwait(false);
-            return availableCats;
+            var result = await _rescueGroupsManager.GetAvailableCatsByFilter().ConfigureAwait(false);
+            return result;
         }
 
-        [Route("organization")]
+        /*[Route("organization")]
         [HttpGet]
         public async Task<RootModel> GetOrganizationInfo()
         {
@@ -59,6 +56,6 @@ namespace NineLivesCatRescue.Controllers
             bool success = await _submitApplicationApiClient.SubmitContactForm(contactForm)
                 .ConfigureAwait(false);
             return success;
-        }
+        }*/
     }
 }

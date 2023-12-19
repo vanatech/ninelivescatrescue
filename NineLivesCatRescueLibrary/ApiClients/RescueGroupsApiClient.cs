@@ -33,7 +33,7 @@ namespace NineLivesCatRescueLibrary.ApiClients
         public async Task<RootModel> GetAvailableAnimalsAsync()
         {
             var request = new RestRequest();
-            request.AddHeader("Authorization", _apiKey);
+            request.AddHeader("Authorization", "placeHolder");
             request.Resource = "public/orgs/8916/animals/search/available";
             request.AddQueryParameter("limit", 50);
             request.AddQueryParameter("include", "pictures");
@@ -44,7 +44,7 @@ namespace NineLivesCatRescueLibrary.ApiClients
         public async Task<RootModel> GetOrganizationInfoAsync()
         {
             var request = new RestRequest();
-            request.AddHeader("Authorization", _apiKey);
+            request.AddHeader("Authorization", "placeHolder");
             request.Resource = "public/orgs/8916";
             request.AddQueryParameter("limit", 50);
             var response = await _client.GetAsync<RootModel>(request).ConfigureAwait(false);
