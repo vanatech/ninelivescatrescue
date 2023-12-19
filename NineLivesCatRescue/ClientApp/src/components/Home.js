@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { CatCard } from './CatCard.jsx';
+import CatCard from './CatCard.jsx';
 import heroImg from '../images/9LivesHeroImg.png';
 
 export class Home extends Component {
