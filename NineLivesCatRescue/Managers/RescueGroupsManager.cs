@@ -50,11 +50,11 @@ public class RescueGroupsManager
             }
         }
 
-        var test = cats.First(x => x.Data.Attributes.Name == "Cricket");
+        var test = cats.Where(x=> x.Data.Attributes.Name != "Barn cats").Take(3).ToArray();
 
-        CatModel[] catModelArray = new[] { test };
+        //CatModel[] catModelArray = new[] { test };
         
-        string testArray = JsonSerializer.Serialize(catModelArray);
+        string testArray = JsonSerializer.Serialize(test);
         return testArray;
     }
 }
