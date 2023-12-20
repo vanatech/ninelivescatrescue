@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CatCard from './CatCard.jsx';
-import heroImg from '../images/9LivesHeroImg.png';
+import heroImg from '../images/9LivesSimba.png';
 
 export class Home extends Component {
   static displayName = Home.name;
@@ -8,8 +8,8 @@ export class Home extends Component {
   render() {
     return (
       <>
-          <div className="flex flex-column flex-md-row h-full">
-              <div className="flex flex-1 items-center justify-center z-10">
+          <div className="flex flex-column flex-md-row">
+              <div className="flex flex-1 items-center z-10">
                   <div className="p-40">
                       <h3 className="text-4xl">Be a Hero to Furry Friends: Support Our Cat Rescue Mission!</h3>
                       <p className="text-xl mt-6">
@@ -18,8 +18,8 @@ export class Home extends Component {
                       <button className="btn btn-primary mt-6" href="available-cats">Browse Cats</button>
                   </div>
               </div>
-              <div className="overflow-hidden flex-1">
-                  <img className="w-50" src={heroImg} alt="" />
+              <div className="flex flex-1 justify-center items-center">
+                  <img className="w-[75%]" src={heroImg} alt="" />
               </div>
           </div>
         <div className="flex flex-col justify-center items-center m-4">

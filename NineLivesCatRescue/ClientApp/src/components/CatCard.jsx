@@ -17,7 +17,7 @@ const CatCard = () => {
             {data.map((item) =>
 
                 <div className="carousel-item">
-                    <div className="card w-96 bg-base-100">
+                    <div className="card w-96 bg-secondary">
                         <div>
                             <figure className="px-10 pt-10"><img src={item.PrimaryPictureUrl} alt="Cat"
                                                                  className="max-h-[350px] rounded-xl"/></figure>

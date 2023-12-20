@@ -8,9 +8,11 @@ export class Layout extends Component {
     return (
       <>
         <NavMenu />
-        <div tag="main">
-          {this.props.children}
-        </div>
+          <div className="flex justify-center" tag="main">
+              <div className="container">
+              {this.props.children}
+              </div>
+          </div>
       </>
     );
   }
