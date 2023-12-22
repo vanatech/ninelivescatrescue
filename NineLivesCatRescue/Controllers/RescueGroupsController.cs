@@ -23,6 +23,14 @@ namespace NineLivesCatRescue.Controllers
             return result;
         }
 
+        [Route("available/featured")]
+        [HttpGet]
+        public async Task<string> GetFeaturedCats()
+        {
+            var result = await _rescueGroupsManager.GetFeaturedCats().ConfigureAwait(false);
+            return result;
+        }
+        
         /*[Route("organization")]
         [HttpGet]
         public async Task<RootModel> GetOrganizationInfo()
