@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import { Chip } from "@material-tailwind/react";
+
 
 const CatCard = () => {
     const [data, setData] = useState([]);
@@ -28,8 +30,8 @@ const CatCard = () => {
                                     {item.Data.Attributes.AgeGroup}
                                 </ul>
                                 <div className="card-actions justify-start">
-                                    <div className="badge badge-outline">Playful</div>
-                                    <div className="badge badge-outline">Affectionate</div>
+                                    <Chip size="sm" variant="outlined" className="rounded-full text-black" value="Playful" />
+                                    <Chip size="sm" variant="outlined" className="rounded-full text-black textTransform-lowercase" value="Affectionate" />
                                 </div>
                                 <p className="line-clamp-3">{item.Data.Attributes.DescriptionText}</p>
                                 <div className="card-actions justify-end mt-2">
