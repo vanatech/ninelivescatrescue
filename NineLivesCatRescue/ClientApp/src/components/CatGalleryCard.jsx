@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
 import {
   Card,
+  CardHeader,
   CardBody,
   CardFooter,
-  CardHeader,
-  Chip,
   Typography,
+  Tooltip,
+  Chip,
 } from "@material-tailwind/react";
+import React, { useEffect, useState } from "react";
 
-const CatCard = () => {
+export function CatGalleryCard() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -20,7 +21,7 @@ const CatCard = () => {
   }, []);
 
   return (
-    <div className="flex gap-4">
+    <>
       {data.map((item) => (
         <Card className="w-96">
           <CardHeader floated={false} className="h-80">
@@ -62,8 +63,6 @@ const CatCard = () => {
           </CardFooter>
         </Card>
       ))}
-    </div>
+    </>
   );
-};
-
-export default CatCard;
+}

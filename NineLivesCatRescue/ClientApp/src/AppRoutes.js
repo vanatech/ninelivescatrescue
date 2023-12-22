@@ -1,5 +1,6 @@
 import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
+import {CatGallery} from "./components/CatGallery";
 
 const AppRoutes = [
   {
@@ -9,6 +10,10 @@ const AppRoutes = [
   {
     path: '/contact',
     element: <Contact />
+  },
+  {
+    path: '/available-cats',
+    element: <CatGallery/>
   }
 ];
 
