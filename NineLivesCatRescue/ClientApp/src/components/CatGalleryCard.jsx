@@ -25,7 +25,7 @@ export function CatGalleryCard() {
       {data.map((item) => (
         <Card className="w-96">
           <CardHeader floated={false} className="h-80">
-            <img src={item.PrimaryPictureUrl} alt="profile-picture" />
+            <img src={item.PrimaryPictureUrl} alt="profile-picture" className="w-full h-full object-cover" />
           </CardHeader>
 
           <CardBody className="text-center">
