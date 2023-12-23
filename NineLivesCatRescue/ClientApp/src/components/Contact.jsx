@@ -5,7 +5,7 @@ export class Contact extends Component {
     render() {
         return (
             <>
-                <div className="flex items-center justify-center mt-16">
+                <div className="flex items-center justify-center h-[80vh]">
                     <form action="/" method="post" className="w-full md:w-[40%] h-[500px] flex flex-col justify-around items-center p-10 md:outline md:outline-secondary rounded-lg">
                         <fieldset className="md:w-full md:relative">
                             <legend className="text-3xl mt-10 self-start md:absolute md:-top-[150px] md:bg-white md:p-4">Contact Us</legend>
