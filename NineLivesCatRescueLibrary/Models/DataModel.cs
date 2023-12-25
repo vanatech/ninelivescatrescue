@@ -8,6 +8,6 @@ namespace NineLivesCatRescueLibrary.Models
         public string Type { get; set; }
         public string Id { get; set; }
         public AttributesModel Attributes { get; set; }
-        public RelationshipModel Relationships { get; set; }
+        public RelationshipModel? Relationships { get; set; }
     }
 }

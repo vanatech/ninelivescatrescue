@@ -30,30 +30,27 @@ export function CatGalleryCard() {
 
           <CardBody className="text-center">
             <Typography variant="h4" color="blue-gray" className="mb-2">
-              {item.Data.Attributes.Name}
+              {item.Attributes.Name}
             </Typography>
             <Typography color="blue-gray" className="font-medium" textGradient>
-              {item.Data.Attributes.AgeGroup}
+              {item.Attributes.AgeGroup}
             </Typography>
           </CardBody>
 
           <CardFooter className="flex flex-col justify-center pt-0">
             <div className="flex flex-row justify-center gap-2 mb-4">
-              <Chip
-                size="sm"
-                variant="outlined"
-                className="rounded-full text-black lowercase"
-                value="Playful"
-              />
-              <Chip
-                size="sm"
-                variant="outlined"
-                className="rounded-full text-black lowercase"
-                value="Affectionate"
-              />
+              {item.Attributes.Qualities.map((quality) => (
+                  <Chip
+                      size="sm"
+                      variant="outlined"
+                      className="rounded-full text-black lowercase"
+                      value={quality}
+                  />
+              ))
+              }
             </div>
             <p className="line-clamp-3">
-              {item.Data.Attributes.DescriptionText}
+              {item.Attributes.DescriptionText}
             </p>
             <div className="card-actions justify-end mt-2">
               <button className="btn btn-ghost" href="">
