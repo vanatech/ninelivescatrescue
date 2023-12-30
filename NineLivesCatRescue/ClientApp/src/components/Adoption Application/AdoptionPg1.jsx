@@ -1,7 +1,7 @@
 import React from 'react';
-import {Checkbox, Input} from "@material-tailwind/react";
+import {Select, Option, Input} from "@material-tailwind/react";
 
-export default function AdoptionApplication() {
+export function AdoptionPg1() {
   return (
     <>
       <div className="flex flex-col justify-center items-center my-10 gap-6">
@@ -21,12 +21,13 @@ export default function AdoptionApplication() {
           <Input variant="static" label="Zipcode" placeholder="Zipcode" />
           <Input variant="static" label="Home/Cell Phone" placeholder="Home/Cell Phone" />
           <Input variant="static" label="How Long At Present Address?" placeholder="" />
-          <label>Age Group:</label>
-          <Checkbox label="1-20" />
-          <Checkbox label="21-25" />
-          <Checkbox label="25-35" />
-          <Checkbox label="36-59" />
-          <Checkbox label="60+" />
+          <Select label="Age Group:">
+            <Option>1-20</Option>
+            <Option>21-25</Option>
+            <Option>25-35</Option>
+            <Option>36-59</Option>
+            <Option>60+</Option>
+          </Select>
         </div>
       </form>
     </>

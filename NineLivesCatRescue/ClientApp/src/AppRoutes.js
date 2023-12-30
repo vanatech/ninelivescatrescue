@@ -1,7 +1,7 @@
 import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
-import {CatGallery} from "./components/CatGallery";
-import AdoptionApplication from "./components/Adoption Application/AdoptionApplication";
+import { CatGallery } from "./components/CatGallery";
+import { AdoptionForm } from "./components/Adoption Application/AdoptionForm";
 
 const AppRoutes = [
   {
@@ -18,7 +18,7 @@ const AppRoutes = [
   },
   {
     path: '/adoption-application',
-    element: <AdoptionApplication/>
+    element: <AdoptionForm />
   },
 ];
 
