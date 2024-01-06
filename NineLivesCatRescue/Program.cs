@@ -39,6 +39,6 @@ app.UseEndpoints(endpoints =>
 }
 );
 
-//app.MapFallbackToFile("index.html");
+app.MapFallbackToFile("index.html");
 
 app.Run();
