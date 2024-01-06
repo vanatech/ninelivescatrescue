@@ -1,3 +1,4 @@
+using Microsoft.Extensions.FileProviders;
 using NineLivesCatRescue.Managers;
 using NineLivesCatRescueLibrary;
 using NineLivesCatRescueLibrary.ApiClients;
@@ -33,12 +34,19 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseFileServer(new FileServerOptions
+{
+    FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory()),
+    RequestPath = "",
+    EnableDefaultFiles = true
+});
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 }
 );
 
-//app.MapFallbackToFile("index.html");
+app.MapFallbackToFile("index.html");
 
 app.Run();
