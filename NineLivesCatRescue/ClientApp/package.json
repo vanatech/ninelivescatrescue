@@ -698,7 +698,7 @@
     "string.prototype.trimstart": "^1.0.6",
     "stringify-object": "^3.3.0",
     "strip-ansi": "^6.0.1",
-    "strip-ansi-cjs": "^6.0.1",
+    "strip-ansi-cjs": "^8.0.0",
     "strip-bom": "^4.0.0",
     "strip-comments": "^2.0.1",
     "strip-final-newline": "^2.0.0",
