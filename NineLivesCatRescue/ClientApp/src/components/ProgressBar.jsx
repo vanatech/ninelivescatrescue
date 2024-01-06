@@ -27,12 +27,12 @@ export function ProgressBar({ value, pgNo, pgLen }) {
     handleMinusClick,
     handlePlusClick,
     Component: (
-      <div className="w-full">
+      <div className="w-3/4 mx-auto mt-2">
         <div className="mb-2 flex justify-start">
           <Typography color="blue-gray" variant="h6">Step {pgNo} / {pgLen}</Typography>
         </div>
 
-        <Progress value={progress} size="lg" color="teal" />
+        <Progress value={progress} size="lg" color="primary" />
       </div>
     ),
   };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "@material-tailwind/react";
+import {Button, Typography} from "@material-tailwind/react";
 import { ProgressBar } from "./ProgressBar";
 
 export function Paginate({
@@ -13,13 +13,13 @@ export function Paginate({
   return (
     <div className="container">
       <center className="mt-4">
-        <h1 className="text-2xl">{title}</h1>
+        <Typography variant="h4">{title}</Typography>
       </center>
       <div>
         {progressBar.Component}
         {childComponents.map((Component, index) => (
           pgNo === index + 1 ? 
-          <div key={index}>
+          <div className="my-6" key={index}>
             <Component />
           </div> : null
         ))}
@@ -40,7 +40,7 @@ export function Paginate({
               &lt;&lt; Back
             </Button>
           )}
-          {pgNo < 3 && (
+          {pgNo < pgLen && (
             <Button
               className="mx-4"
               type="button"
