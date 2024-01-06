@@ -840,6 +840,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src/"
   },
+  "env": {
+    "CI": "false"
+  },
   "eslintConfig": {
     "extends": [
       "react-app"
