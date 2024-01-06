@@ -836,7 +836,7 @@
     "prestart": "node aspnetcore-https && node aspnetcore-react",
     "start": "rimraf ./build && react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "move build ../NineLivesCatRescue/wwwroot",
+    "postbuild": "move build .../NineLivesCatRescue/wwwroot",
     "test": "cross-env react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/"
