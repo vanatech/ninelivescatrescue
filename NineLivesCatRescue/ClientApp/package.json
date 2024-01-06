@@ -804,7 +804,7 @@
     "workbox-webpack-plugin": "^6.5.4",
     "workbox-window": "^6.5.4",
     "wrap-ansi": "^7.0.0",
-    "wrap-ansi-cjs": "^7.0.0",
+    "wrap-ansi-cjs": "^8.0.0",
     "wrappy": "^1.0.2",
     "write-file-atomic": "^3.0.3",
     "ws": "^7.5.9",
