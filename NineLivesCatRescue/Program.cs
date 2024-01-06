@@ -1,3 +1,4 @@
+using Microsoft.Extensions.FileProviders;
 using NineLivesCatRescue.Managers;
 using NineLivesCatRescueLibrary;
 using NineLivesCatRescueLibrary.ApiClients;
@@ -32,6 +33,13 @@ app.UseCors();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+app.UseFileServer(new FileServerOptions
+{
+    FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory()),
+    RequestPath = "",
+    EnableDefaultFiles = true
+});
 
 app.UseEndpoints(endpoints =>
 {
