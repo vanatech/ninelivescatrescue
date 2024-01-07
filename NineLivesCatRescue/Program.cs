@@ -34,18 +34,15 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-app.UseFileServer(new FileServerOptions
-{
-    FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory()),
-    RequestPath = "",
-    EnableDefaultFiles = true
-});
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller}/{action=Index}/{id?}");
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-}
-);
+// app.UseEndpoints(endpoints =>
+// {
+//     endpoints.MapControllers();
+// }
+// );
 
 app.MapFallbackToFile("index.html");
 
