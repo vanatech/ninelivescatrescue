@@ -14,7 +14,7 @@ export function CatGalleryCard() {
 
   useEffect(() => {
     // Make API call when the component mounts
-    fetch("https://localhost:7048/api/rescue-groups/available")
+    fetch(`${process.env.REACT_APP_API_URL}rescue-groups/available`)
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));
